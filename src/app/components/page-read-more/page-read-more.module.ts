@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArticlesComponent } from './articles.component';
+import { PageReadMoreComponent } from './page-read-more.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule
   ],
-  declarations: [ArticlesComponent],
-  exports: [ArticlesComponent]
+  declarations: [PageReadMoreComponent],
+  exports: [PageReadMoreComponent]
 })
-export class ArticlesModule { }
+export class PageReadMoreModule { }

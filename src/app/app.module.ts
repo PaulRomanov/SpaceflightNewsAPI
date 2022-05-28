@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticlesModule } from './components/articles/articles.module';
+import { PageReadMoreModule } from './components/page-read-more/page-read-more.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ArticlesModule } from './components/articles/articles.module';
   BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ArticlesModule
+    ArticlesModule,
+    PageReadMoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

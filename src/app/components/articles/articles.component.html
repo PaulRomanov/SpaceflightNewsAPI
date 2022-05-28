@@ -8,9 +8,14 @@
      </div>
      <div class="title-name"> {{ articlesList[i].title }}</div>
      <div class="title-summary"> {{ articlesList[i].summary }}</div>
-     <button class="btn-read-more" (click)="viewMore()">Read more <img class="arrow-right" src="../../../assets/arrow-right.svg" alt="arrow-right"></button>
+     <div class="btn-wrapper" routerLinkActive="active">
+      <a [routerLink]="['/readMore']" class="btn-read-more" (click)="viewMore()">Read more <img class="arrow-right" src="../../../assets/arrow-right.svg" alt="arrow-right"></a>
+     </div>
+
+
+
+
     </div>
 
   </div>
 </div>
-

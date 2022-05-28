@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  justify-items: center;
   .response-wrapper {
     width: 400px;
     background-color: white;
@@ -17,10 +18,9 @@
       .title-date,
       .title-name,
       .title-summary,
-      .btn-read-more {
+      .btn-read-more,
+      .btn-wrapper {
         font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
         color: #363636;
         margin: 0 0 20px 0;
       }
@@ -53,9 +53,8 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 150%;
-        border: none;
-        background: white;
         cursor: pointer;
+        text-decoration: none;
         .arrow-right {
           width: 21px;
           height: 10px;
