@@ -11,7 +11,7 @@ export class ApiService {
   ) { }
 
   public getConversion() {
-    return this.httpClient.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
+    return this.httpClient.get('https://api.spaceflightnewsapi.net/v3/articles')
   }
 
 }
