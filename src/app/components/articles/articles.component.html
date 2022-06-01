@@ -1,0 +1,28 @@
+
+<div class="wrapper-content">
+  <div
+    class="response-wrapper"
+    *ngFor="let article of articlesList; let i = index"
+  >
+    <img src="{{ articlesList[i].imageUrl }}" alt="foto" />
+    <div class="content">
+      <div class="title-date">
+        <img class="group-svg" src="../../../assets/Group.svg" alt="Group" />
+        {{ articlesList[i].publishedAt | date }}
+      </div>
+      <div class="title-name">{{ articlesList[i].title }}</div>
+      <div class="title-summary">{{ articlesList[i].summary }}</div>
+      <div class="btn-wrapper" routerLinkActive="active">
+        <a
+          [routerLink]="['/readMore']"
+          class="btn-read-more"
+          >Read more
+          <img
+            class="arrow-right"
+            src="../../../assets/arrow-right.svg"
+            alt="arrow-right"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>
