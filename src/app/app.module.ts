@@ -6,6 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticlesModule } from './components/articles/articles.module';
 import { PageReadMoreModule } from './components/page-read-more/page-read-more.module';
+import { MatTableModule } from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -13,13 +17,21 @@ import { PageReadMoreModule } from './components/page-read-more/page-read-more.m
   ],
   imports: [
 
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ArticlesModule,
-    PageReadMoreModule
+    PageReadMoreModule,
+    MatTableModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    MatFormFieldModule,
+    MatInputModule,
+  ]
 })
 export class AppModule { }

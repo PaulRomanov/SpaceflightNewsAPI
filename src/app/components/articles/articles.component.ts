@@ -15,13 +15,14 @@ export class ArticlesComponent implements OnInit {
 
   public isViewMore: boolean = false;
 
-
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
     this.apiService.getConversion().subscribe((data) => {
       this.articlesList = data;
       this.articlesListNew.emit();
+      console.log(data);
+
     })
   }
 

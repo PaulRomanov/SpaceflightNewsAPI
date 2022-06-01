@@ -1,0 +1,44 @@
+.wrapper {
+  height: 100vh;
+  .wrapper-back-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .wrapper-content-read-more {
+    background-color: white;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    position: relative;
+    margin: -67px 75px 0 75px;
+    padding: 35px 75px 50px 75px;
+    .title-article {
+      display: flex;
+      justify-content: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #363636;
+    }
+  }
+  .btn-wrapper-back {
+    margin: 35px 0 45px 168px;
+    .btn-back {
+      font-family: "Montserrat";
+      color: #363636;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      cursor: pointer;
+      text-decoration: none;
+      .arrow-right {
+        width: 21px;
+        height: 10px;
+      }
+    }
+  }
+}
